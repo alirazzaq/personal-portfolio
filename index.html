@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali Razzaq Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Optional: Add any minor custom styles here if needed */
+
+    /* Style for social media icons */
+    .social-icon img {
+        /* Adjust icon color to match theme (example filter) */
+        filter: invert(30%) sepia(10%) saturate(1000%) hue-rotate(200deg) brightness(90%) contrast(90%);
+        transition: filter 0.3s ease; /* Smooth transition for hover effect */
+    }
+    .social-icon:hover img {
+        /* Example hover color filter */
+        filter: invert(50%) sepia(50%) saturate(1500%) hue-rotate(250deg) brightness(100%) contrast(100%);
+    }
+
+    /* Style for project cards */
+    .project-card {
+      background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+      padding: 1.5rem; /* Equivalent to p-6 */
+      border-radius: 0.75rem; /* Equivalent to rounded-xl */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
+      text-align: left; /* Align text to the left within the card */
+      transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    }
+    .project-card:hover {
+        transform: translateY(-5px); /* Slight lift effect on hover */
+    }
+    .project-card h3 {
+        font-size: 1.25rem; /* Equivalent to text-xl */
+        font-weight: 600; /* Equivalent to font-semibold */
+        color: #5b21b6; /* Equivalent to text-purple-700 */
+        margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+    }
+     .project-card p {
+        font-size: 0.875rem; /* Equivalent to text-sm */
+        color: #4b5563; /* Equivalent to text-gray-700 */
+        margin-bottom: 1rem; /* Equivalent to mb-4 */
+        min-height: 3.5rem; /* Ensure consistent height for description text */
+     }
+
+    /* Style for project buttons */
+    .project-card a {
+        display: inline-block; /* Make the link behave like a block for padding */
+        background-color: #a78bfa; /* Light purple background (bg-purple-400) */
+        color: white; /* White text */
+        padding: 0.5rem 1rem; /* Equivalent to py-2 px-4 */
+        border-radius: 0.375rem; /* Equivalent to rounded-md */
+        font-size: 0.875rem; /* Equivalent to text-sm */
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+    .project-card a:hover {
+        background-color: #8b5cf6; /* Darker purple on hover (hover:bg-purple-500) */
+    }
+
+    /* Style for company logos to ensure they fit well */
+    .company-logo {
+        object-fit: contain; /* Scale the image while preserving aspect ratio */
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-yellow-100 via-pink-200 to-purple-300 text-gray-900 p-8 font-mono">
+
+  <section class="text-center space-y-6 pt-10 md:pt-16">
+    <div class="relative w-48 h-48 mx-auto">
+      <img
+        src="https://media-hosting.imagekit.io/750caa76d586403c/Untitled%20design.jpg?Expires=1840880616&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=fhsEsK2vbBUsG4Coe8NyIs66o-T~6hB-B2CcmsU4HqEyi~dMW6lmm0~BjeLGP0HM31Vo1h~RxSwF87wJItcsvUovpbVYZ6I4vqDJzHz5-L6k0MrXnqKoe5GAXcuJWp3BT~usLTWgEyCWQ8Ads5fiUVVxIamjNN-b4c6Cg2yYK06Ad7tfsU69-7Fj-hioPPFZEyz-mifo99-tg1cP6M~4UNdtlt4RoYFxzS5ZTPmS9S9jqKI88dTuUXUDd0fSJuXKk9sZkhse8~VRL-uS6vHdmU2EehNgi8rNhpR2yMcBpDXy3Htg0L5~sX5pDSIbq67OS702uQaDMjeGb0Pk2VXiYg__"
+        alt="Ali Razzaq"
+        class="w-48 h-48 mx-auto rounded-full shadow-2xl border-4 border-white object-cover"
+        onerror="this.onerror=null; this.src='https://placehold.co/192x192/FFFFFF/D1D5DB?text=Image+Missing';" />
+    </div>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-purple-900">Ali Razzaq</h1>
+    <p class="text-lg md:text-xl text-pink-700">Data Scientist | Machine Learning Enthusiast | Problem Solver</p>
+    <div class="flex justify-center space-x-6">
+      <a href="https://github.com/alirazzaq" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" class="w-6 h-6" alt="GitHub Icon"/>
+      </a>
+      <a href="https://linkedin.com/in/alirazzaq" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" class="w-6 h-6" alt="LinkedIn Icon"/>
+      </a>
+    </div>
+    <div class="mt-4 space-x-4">
+      <a href="mailto:geekninja@wearehackerone.com" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full inline-block transition duration-300">Hire Me</a>
+      <a href="https://ali-razzaq-resume.tiiny.site" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full inline-block transition duration-300" target="_blank" rel="noopener noreferrer">View CV</a>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto text-center space-y-6 mt-16 md:mt-20">
+    <h2 class="text-3xl md:text-4xl font-bold text-purple-800">Education</h2>
+    <div class="bg-white bg-opacity-60 p-6 rounded-xl shadow-lg flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+      <a href="https://www.umt.edu.pk" target="_blank" rel="noopener noreferrer" aria-label="University of Management and Technology">
+        <img
+          src="https://www.eduopinions.com/wp-content/uploads/2019/05/UniversityofManagementandTechnology-logo-350x328.jpg"
+          class="w-16 h-16 sm:w-10 sm:h-10 rounded-full flex-shrink-0 company-logo"
+          alt="UMT Logo"
+          onerror="this.onerror=null; this.src='https://placehold.co/40x40/FFFFFF/D1D5DB?text=Logo';" />
+      </a>
+      <div class="text-center sm:text-left">
+        <h3 class="text-xl md:text-2xl font-semibold text-purple-700">Masters in Data Science</h3>
+        <p class="text-md md:text-lg text-gray-800">University of Management and Technology, Lahore</p>
+        <p class="text-sm md:text-md text-gray-600">Sep 2024 – Oct 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto text-center space-y-6 mt-16 md:mt-20">
+    <h2 class="text-3xl md:text-4xl font-bold text-purple-800">Work Experience</h2>
+
+    <div class="bg-white bg-opacity-60 p-6 rounded-xl shadow-lg flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6"> <img
+        src="https://media.licdn.com/dms/image/v2/D560BAQHPao0B8uCJMA/company-logo_200_200/company-logo_200_200/0/1693216489946?e=1751500800&v=beta&t=gz0psKVr0FRRGf8dXdgUqhoSMbM9ipIEsHwI7Ds3GZM"
+        alt="Stealth AI Startup Logo"
+        class="w-16 h-16 sm:w-10 sm:h-10 rounded-full flex-shrink-0 company-logo bg-gray-300" onerror="this.onerror=null; this.src='https://placehold.co/40x40/E5E7EB/4B5563?text=Logo';" />
+      <div class="text-center sm:text-left">
+        <h3 class="text-xl md:text-2xl font-semibold text-purple-700">AI Engineer</h3>
+        <p class="text-md md:text-lg text-gray-800">Stealth AI Startup</p>
+        <p class="text-sm md:text-md text-gray-600">Feb 2025 – Present</p>
+        <p class="text-sm text-gray-700 mt-1">Developing and implementing cutting-edge AI solutions.</p>
+      </div>
+    </div>
+
+    <div class="bg-white bg-opacity-60 p-6 rounded-xl shadow-lg flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+      <img
+        src="https://media.licdn.com/dms/image/v2/D560BAQHfPLS1BMzB4Q/company-logo_200_200/B56ZWl1KaTGUAQ-/0/1742243932059/hackerone_logo?e=1751500800&v=beta&t=FUqms8GzGT-ShzWJCkh24bL2enbWeVJFf4tURLs0uZY"
+        alt="HackerOne Logo"
+        class="w-16 h-16 sm:w-10 sm:h-10 rounded-full flex-shrink-0 company-logo bg-gray-700" onerror="this.onerror=null; this.src='https://placehold.co/40x40/374151/FFFFFF?text=H1';" />
+      <div class="text-center sm:text-left">
+        <h3 class="text-xl md:text-2xl font-semibold text-purple-700">Security Researcher</h3>
+        <p class="text-md md:text-lg text-gray-800">HackerOne</p>
+        <p class="text-sm md:text-md text-gray-600">2017 – Present</p>
+        <p class="text-sm text-gray-700 mt-1">Identifying and reporting security vulnerabilities on various platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto text-center space-y-6 mt-16 md:mt-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-purple-800 mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="project-card">
+              <h3>NLP Sentiment Analysis</h3>
+              <p>
+                  Analyzed text data to determine sentiment polarity using Natural Language Processing techniques.
+              </p>
+              <a href="https://github.com/alirazzaq/nlp-sentiment-analysis" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+
+          <div class="project-card">
+              <h3>Sales Forecasting Dashboard</h3>
+              <p>
+                  Developed a dashboard to visualize sales data and predict future trends using time series analysis.
+              </p>
+               <a href="https://github.com/alirazzaq/sales-forecasting-dashboard" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+
+          <div class="project-card">
+              <h3>Customer Churn Prediction</h3>
+              <p>
+                  Built a machine learning model to predict customer churn based on usage patterns and demographics.
+              </p>
+               <a href="https://github.com/alirazzaq/customer-churn-prediction" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+
+          </div>
+  </section>
+
+  <section class="text-center mt-16 md:mt-20">
+    <h2 class="text-3xl md:text-4xl font-bold text-purple-800">Contact</h2>
+    <p class="text-gray-800 mt-2">Wanna team up or jam on data? Let’s chat 🎸</p>
+    <a href="mailto:geekninja@wearehackerone.com" class="mt-4 inline-block bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full transition duration-300">Email Me</a>
+  </section>
+
+  <footer class="text-center text-sm text-gray-700 mt-16 md:mt-20 border-t border-gray-400 pt-6">
+    © 2025 Ali Razzaq. Keep it funky.
+  </footer>
+
+</body>
+</html>
